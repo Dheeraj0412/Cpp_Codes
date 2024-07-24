@@ -1,0 +1,143 @@
+1)variables,(container to store data)
+-int for integers
+-float for realnumbers
+-char for characters.
+-double is like float but to store number with greater decimal places.
+-bool for true/false(boolean) #if value true so output 1,else 0
+
+2)input cin>>,
+  output cout<<
+
+3)header of two types
+-system header file syntax; #include<headerfilename>
+-user defined filed syntax; #inclide "file name  "
+
+#for upper line paste ctrl+q
+#for multicursor alt+shift+mouse drag
+
+#global variable ko local m use krne ki liye syntax m :: use krte h like cout<<::variableNAME;
+
+#converting one data type into another data type is known as typecasting
+eg:
+float a= 10.123
+cout<<(int)a; or cout<<int(a);   //float datatype converted into int datatype
+
+#agr variable ki value change nhi krni h toh use kre const syntax; const int variable = variablevalue; (int,float,char,etc)
+
+#manipulators;
+setw,endl
+
+#ctrl structure
+1) sequence structure
+2) selection structure //ways, if-else if-else ladder and switch case statement
+3) loop structure, .for loop,while loop,do while loop.
+
+
+#use customize snippets to increase productivity eg. 'boilerplate' type krte hi pura basic code print hojahe !!
+
+#use of break to cut down loop aur fn
+#continue jo code pe h mtlb vo iteration pe h vo chor ke dusre iteration pe jump krdo
+
+=====#pointer==is a type of operator or datatype which holds the address of other data types
+&= address of operator
+*= dereference of operator
+
+#new keyword in pointer
+syntax: int *p = new int(10);
+in array : float *arr = new float[2];
+
+#delete operator in pointer 
+delete[] arr;    #this will free all address value aur output m garbage value ahegi
+
+syntax,
+int a = 4;
+int* b = &a;
+cout<<b; //address of a    dono same h
+cout<<&a; //address of a      "
+
+cout<<*b; //value of b mtlb a address pe a ki ky value h i.e 4
+
+#pointer to pointer
+i.e address of b
+
+int** c = &b;
+cout<<c;
+
+#In c++ counting start from 0..1,2,3, etc
+
+#ARRAY
+= array is the collection of items of similar type stored in contiguous memory locations!! 
+ 
+
+#user defined data types
+=struc 
+=unions
+=enums
+
+#The function prototype feature in C++ allows us to call the function before it has been declared!!
+
+
+#An inline function is one for which the compiler copies the code from the function definition 
+directly into the code of the calling function rather than creating a separate set of instructions in memory. 
+This eliminates call-linkage overhead and can expose significant optimization opportunities.
+#only use for function jo boht chote ho!!!
+
+#static variable bs ek baar execute hoga agli baar vo value ko save krega aur dusra code execute rhegaa
+eg:
+static int c=0;   //yah line bs ek baar execute hogi aur value save kredgi
+c  = c+1;  //next time se yah execute hogaa upr wali line nhi!!, the value of c will be retained
+
+#inline ke saath static use nhi krna h kbhi bhi!!
+
+
+#float money(int dollar,int rupee= 500)  //so this int rupee is a default argument!!! value pehle se hi h dene ki jarurat nhi
+agr dete h toh yah default hat jahegi aur jo di h vo execute ho jahegi!!
+(default argument hamesha right m hona chaiye)
+
+#constant argument me value change nhi kr skte h jo h vohi rheti h!!
+
+#Recursion is the technique of making a function call itself
+
+#Function overloading: When the function name is same but type of arguments are different
+eg:
+sum(int a,int b) and sum(int a,int b,int c) as we can see both function are of same name 
+but have different agrument!! this is known as fn overloading!!
+
+#nesting of member function,
+A member function can call another member function of the same class directly without using the dot operator
+
+#trick to swap to numbers
+temp = a;
+a = b;
+b = temp;
+
+#to shift a line in vs code use alt+ arrow up or down.
+
+//protected access modifier in c++.
+
+                    public derivation  private derivation  protected derivation
+1. public members     not inherited     not inherited         not inherited
+2. protected members  protected         private               protected
+3. public members     public            private               protected
+
+#ambiguity in c++
+when one class is derived for two or more base classes then there are chances that the base classes have functions with the same name
+-to solve this specify in dervied class ki konse base ka function use krna h
+
+-Virtual base classes in C++ are used to prevent multiple instances of a given class from appearing in an inheritance hierarchy when using multiple inheritances.
+
+-vo cheez pehle declare hoti h vo pehle intialize bhi hoti h
+
+#polymorphism, one name and multiple forms
+eg in c++, functions overloading,operator overloading,virtual functions
+
+-compiler time polymorphism in c++ can be achieved by, //program invoked hone ke pehle malum hota h konsa function run hoga
+1)function overloading
+2)operator overloading
+
+-run time polymorphism in c++ can be achieved by, //program actual jb run hota h tb decision liya jata h konsa fn run hoga.
+1)virtual functions
+
+#An abstract class is a class that is designed to be specifically used as a base class. An abstract class contains at least one pure virtual function
+
+#The DRY principle in coding stands for "Don't Repeat Yourself.

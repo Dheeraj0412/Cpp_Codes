@@ -1,0 +1,1 @@
+writing sample using open()
